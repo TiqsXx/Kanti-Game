@@ -13,4 +13,11 @@ public void PlayGame()
 public void QuitGame(){
    Application.Quit();
 }
+
+public void Settingsswitch()
+    {
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
 }

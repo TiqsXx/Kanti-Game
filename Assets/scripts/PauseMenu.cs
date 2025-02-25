@@ -46,4 +46,11 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
+
+    public void Settingsswitch()
+    {
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
 }
