@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb; // Reference to the Rigidbody component
 
     private Vector3 movement; // Stores the movement input
-
+    
     void Update()
     {
         // Input handling
