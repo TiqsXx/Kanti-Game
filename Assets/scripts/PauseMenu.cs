@@ -6,10 +6,12 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject optionsMenuUI;
 
         void Start()
     {
         pauseMenuUI.SetActive(false); // Stellt sicher, dass das Pause-Menü zu Beginn deaktiviert ist
+        optionsMenuUI.SetActive(false); // Stellt sicher, dass das Options-Menü zu Beginn deaktiviert ist
         GameIsPaused = false;
     }
 
@@ -41,6 +43,16 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+    }
+
+    public void ShowOptions()
+    {
+        optionsMenuUI.SetActive(true);
+    }
+
+    public void HideOptions()
+    {
+        optionsMenuUI.SetActive(false);
     }
     public void Back2MainMenu()
     {

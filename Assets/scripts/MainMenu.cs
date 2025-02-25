@@ -10,6 +10,11 @@ public void PlayGame()
     SceneManager.LoadSceneAsync(1);
 }
 
+public void showFullOptions()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
+
 public void QuitGame(){
    Application.Quit();
 }
