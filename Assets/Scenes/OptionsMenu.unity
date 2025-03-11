@@ -1477,6 +1477,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 198378796e5740342b66d3cc20c18a84, type: 2}
   VolumeSlider: {fileID: 1207267319}
+  QualityDropdown: {fileID: 1536051839}
+  FullScreenToggle: {fileID: 2084254618}
 --- !u!1 &1049148726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,7 +1716,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 120189565}
   m_HandleRect: {fileID: 1242640912}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -25
   m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
