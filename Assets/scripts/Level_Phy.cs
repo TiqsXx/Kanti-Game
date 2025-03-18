@@ -5,13 +5,14 @@ using UnityEngine.UI;
 using System.Threading;
 using System;
 
-public class Level_Math : MonoBehaviour
+public class Level_Phy : MonoBehaviour
 {
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int currentquestion = 0;
     public int score = 0;
-    public string[] question_math;
-    public string[] answer_math;
+    public string[] question;
+    public string[] answer;
     public Button[] buttons;
     public TextMeshProUGUI question_text;
     public TextMeshProUGUI score_text;
@@ -28,11 +29,11 @@ public class Level_Math : MonoBehaviour
     void Start()
     {
         button_continue.gameObject.SetActive(false); //Deaktiviert den Knopf
-        question_text.text = question_math[currentquestion];
-        button1_text.text = answer_math[currentquestion * 4 + 0];
-        button2_text.text = answer_math[currentquestion * 4 + 1];
-        button3_text.text = answer_math[currentquestion * 4 + 2];
-        button4_text.text = answer_math[currentquestion * 4 + 3];
+        question_text.text = question[currentquestion];
+        button1_text.text = answer[currentquestion * 4 + 0];
+        button2_text.text = answer[currentquestion * 4 + 1];
+        button3_text.text = answer[currentquestion * 4 + 2];
+        button4_text.text = answer[currentquestion * 4 + 3];
     }
 
     // Update is called once per frame
@@ -47,15 +48,15 @@ public class Level_Math : MonoBehaviour
             case 0:
                 if (clickedButton == 1)
                 {
-                    button1.image.color = Color.green; //Ã„ndert den Knopf mit der richtigen Antwort auf grÃ¼n
+                    button1.image.color = Color.green; //Ändert den Knopf mit der richtigen Antwort auf grün
                     score += 1;
                     score_text.text = "Score: " + score.ToString();
 
                 }
                 else
                 {
-                    buttons[clickedButton].image.color = Color.red; //Ã„ndert den falsch angeklickten Knopf auf rot
-                    button1.image.color = Color.green; //Ã„ndert den Knopf mit der richtigen Antwort auf grÃ¼n
+                    buttons[clickedButton].image.color = Color.red; //Ändert den falsch angeklickten Knopf auf rot
+                    button1.image.color = Color.green; //Ändert den Knopf mit der richtigen Antwort auf grün
                 }
                 break;
             case 1:
@@ -124,11 +125,11 @@ public class Level_Math : MonoBehaviour
             button.interactable = true;
         }
 
-        question_text.text = question_math[currentquestion];
-        button1_text.text = answer_math[currentquestion * 4 + 0]; //Beim ersten Mal kommt 8, beim dritten mal 12
-        button2_text.text = answer_math[currentquestion * 4 + 1];
-        button3_text.text = answer_math[currentquestion * 4 + 2];
-        button4_text.text = answer_math[currentquestion * 4 + 3];
+        question_text.text = question[currentquestion];
+        button1_text.text = answer[currentquestion * 4 + 0]; //Beim ersten Mal kommt 8, beim dritten mal 12
+        button2_text.text = answer[currentquestion * 4 + 1];
+        button3_text.text = answer[currentquestion * 4 + 2];
+        button4_text.text = answer[currentquestion * 4 + 3];
         button_continue.gameObject.SetActive(false); //Deaktiviert den Knopf
     }
 }
