@@ -443,13 +443,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 807889565}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5be4a0b293fc541a0c05d16e21f66c, type: 3}
+  m_Script: {fileID: 11500000, guid: 93af589ddcad4d14bb35f6943ec596db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cam: {fileID: 0}
-  _linePrefab: {fileID: 5743486023401617475, guid: 79ddc70516569dd469be87394e4af1cb, type: 3}
-  _currentLine: {fileID: 0}
+  _linePrefab: {fileID: 2713166458657975641, guid: 00137f48acf6c184b9d869adaa6a287e, type: 3}
   drawLayer:
+    serializedVersion: 2
     m_Bits: 64
 --- !u!4 &807889567
 Transform:
