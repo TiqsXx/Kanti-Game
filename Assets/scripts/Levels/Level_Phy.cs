@@ -25,10 +25,12 @@ public class Level_Phy : MonoBehaviour
     public Button button3;
     public TextMeshProUGUI button4_text;
     public Button button_continue;
+    public Button button_back;
 
     void Start()
     {
         button_continue.gameObject.SetActive(false); //Deaktiviert den Knopf
+        button_back.gameObject.SetActive(false);
         question_text.text = question[currentquestion];
         button1_text.text = answer[currentquestion * 4 + 0];
         button2_text.text = answer[currentquestion * 4 + 1];
@@ -46,9 +48,9 @@ public class Level_Phy : MonoBehaviour
         switch (currentquestion)
         {
             case 0:
-                if (clickedButton == 1)
+                if (clickedButton == 2)
                 {
-                    button1.image.color = Color.green; //Ändert den Knopf mit der richtigen Antwort auf grün
+                    button2.image.color = Color.green; //Ändert den Knopf mit der richtigen Antwort auf grün
                     score += 1;
                     score_text.text = "Score: " + score.ToString();
 
@@ -56,7 +58,7 @@ public class Level_Phy : MonoBehaviour
                 else
                 {
                     buttons[clickedButton].image.color = Color.red; //Ändert den falsch angeklickten Knopf auf rot
-                    button1.image.color = Color.green; //Ändert den Knopf mit der richtigen Antwort auf grün
+                    button2.image.color = Color.green; //Ändert den Knopf mit der richtigen Antwort auf grün
                 }
                 break;
             case 1:
@@ -73,6 +75,19 @@ public class Level_Phy : MonoBehaviour
                 }
                 break;
             case 2:
+                if (clickedButton == 1)
+                {
+                    button1.image.color = Color.green;
+                    score += 1;
+                    score_text.text = "Score: " + score.ToString();
+                }
+                else
+                {
+                    buttons[clickedButton].image.color = Color.red;
+                    button1.image.color = Color.green;
+                }
+                break;
+            case 3:
                 if (clickedButton == 3)
                 {
                     button3.image.color = Color.green;
@@ -83,19 +98,6 @@ public class Level_Phy : MonoBehaviour
                 {
                     buttons[clickedButton].image.color = Color.red;
                     button3.image.color = Color.green;
-                }
-                break;
-            case 3:
-                if (clickedButton == 0)
-                {
-                    button0.image.color = Color.green;
-                    score += 1;
-                    score_text.text = "Score: " + score.ToString();
-                }
-                else
-                {
-                    buttons[clickedButton].image.color = Color.red;
-                    button0.image.color = Color.green;
                 }
                 break;
 
@@ -116,6 +118,7 @@ public class Level_Phy : MonoBehaviour
             {
                 button.interactable = false;
             }
+            button_back.gameObject.SetActive(true);
             Debug.Log("end");
             return;
         }
