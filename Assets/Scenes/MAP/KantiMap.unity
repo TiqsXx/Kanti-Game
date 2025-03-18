@@ -1591,7 +1591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375a8217c6a37c4408a7280ea3502097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoadIndex: 7
+  sceneLoadIndex: 10
 --- !u!65 &365040763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4879,7 +4879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77177b628b59fb0438411aa373a1e9ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpawnPoint: {fileID: 1403823159}
 --- !u!1 &1075210162
 GameObject:
   m_ObjectHideFlags: 0

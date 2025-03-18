@@ -32,6 +32,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ROOMS/M01/M01_Physics.unity
     guid: 3039c4c0173b39a43ad5813ad4cb78fa
+  - enabled: 1
+    path: Assets/Scenes/ROOMS/H07/H07_BiG.unity
+    guid: 36ddc99ed8e30024f91e2df66c85fce7
+  - enabled: 1
+    path: Assets/Scenes/MAP/HMap.unity
+    guid: 2a8bfcbfb5857da4ca954e12d972a2c4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
