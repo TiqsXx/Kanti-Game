@@ -15,11 +15,23 @@ EditorBuildSettings:
     path: Assets/Scenes/GUI/OptionsMenu.unity
     guid: 08df66d5b4813514e8ada760f5e9921a
   - enabled: 1
-    path: Assets/Scenes/NawiMap.unity
-    guid: f0567e948f065494ab9eaa7297beb7c0
+    path: Assets/Scenes/MAP/NawiMap.unity
+    guid: 2ac428d4938bf5545b281a479ef4d734
   - enabled: 1
     path: Assets/Scenes/MAP/KMap.unity
     guid: 940ecf3ab8e90f64bb640157c9be4523
+  - enabled: 1
+    path: Assets/Scenes/MAP/JMap.unity
+    guid: ea95b591861c0c44499ec327c3fdf409
+  - enabled: 1
+    path: Assets/Scenes/MAP/MainMap.unity
+    guid: cd3ef152ba173b14aa7c3ac5fdbe182d
+  - enabled: 1
+    path: Assets/Scenes/ROOMS/J01/J01_Math.unity
+    guid: ed5d743112c54d94eb2aec7e55753051
+  - enabled: 1
+    path: Assets/Scenes/ROOMS/M01/M01_Physics.unity
+    guid: 3039c4c0173b39a43ad5813ad4cb78fa
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
