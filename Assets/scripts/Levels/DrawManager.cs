@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;  // Für Button-Verwendung
 
 public class DrawManager : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class DrawManager : MonoBehaviour
 
     // Plane, auf der gezeichnet wird
     [SerializeField] private LayerMask drawLayer; // Der Layer, der für das Zeichnen genutzt wird
+
+    // Liste, um alle erstellten Linien zu speichern
+    private List<Line> drawnLines = new List<Line>();
 
     void Start()
     {
@@ -32,6 +36,7 @@ public class DrawManager : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 _currentLine = Instantiate(_linePrefab, hitPosition, Quaternion.identity);
+                drawnLines.Add(_currentLine); // Die Linie zur Liste hinzufügen
             }
 
             if (Input.GetMouseButton(0))
@@ -39,5 +44,16 @@ public class DrawManager : MonoBehaviour
                 _currentLine.SetPosition(hitPosition);
             }
         }
+    }
+
+    // Methode zum Löschen aller gezeichneten Linien
+    public void ClearDrawings()
+    {
+        foreach (Line line in drawnLines)
+        {
+            Destroy(line.gameObject); // Lösche jedes Line-Objekt
+        }
+
+        drawnLines.Clear(); // Leere die Liste
     }
 }
