@@ -1,1 +1,14 @@
+ ***** Options (Einstellungen)*****
+ · QualityIndex
+ · VolumeSliderValue
+ · FullScreen
  
+ ***** Main Menu *****
+ · FirstTime (regelt die Anzeige der Dialogszene [nur beim 1. Mal])
+
+ ***** Levelzustand *****
+ · Phy1Completed
+ · Math1Completed
+ · Mus1Completed
+ · Eng1Completed
+ · Deu1Completed
