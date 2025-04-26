@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ROOMS/G02/G02_Mus.unity
     guid: d47b4bef41d07784690d06aeafb20abf
+  - enabled: 1
+    path: Assets/Scenes/DialogueStart.unity
+    guid: 07547e7960c2a084ab9f4d1529b514b9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
