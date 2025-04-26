@@ -6,7 +6,10 @@ public class MainMenu : MonoBehaviour
 {
     public void Start()
     {
-        PlayerPrefs.SetInt("FirstTime", 1);
+        if (PlayerPrefs.GetInt("FirstTime") == 0)
+        {
+            PlayerPrefs.SetInt("FirstTime", 1);
+        }
     }
     public void PlayGame()
 {

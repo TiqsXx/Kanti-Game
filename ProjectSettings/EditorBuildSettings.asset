@@ -45,11 +45,29 @@ EditorBuildSettings:
     path: Assets/Scenes/ROOMS/G02/G02_Mus.unity
     guid: d47b4bef41d07784690d06aeafb20abf
   - enabled: 1
+    path: Assets/Scenes/ROOMS/F01/F01_Eng.unity
+    guid: 74fdfdc2a79a32d40a72371c9bae898e
+  - enabled: 1
+    path: Assets/Scenes/ROOMS/L01/Snake.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/DialogueStart.unity
     guid: 07547e7960c2a084ab9f4d1529b514b9
   - enabled: 1
     path: Assets/Scenes/DialogueMath.unity
     guid: 3a6c587b274207542b49a3abf5703729
+  - enabled: 1
+    path: Assets/Scenes/ROOMS/D01/D01_Geo.unity
+    guid: 30b6177be595d42489900ee990a5a7b1
+  - enabled: 1
+    path: Assets/Scenes/ROOMS/Bio/M03_Bio_1.unity
+    guid: d6790e77a4d6d174d91adaa147193e9d
+  - enabled: 1
+    path: Assets/Scenes/ROOMS/Franz/E05_Fra_1.unity
+    guid: 49b7665640bc3b441946411ffaeebdfd
+  - enabled: 1
+    path: Assets/Scenes/ROOMS/Spo/H01_Spo_1.unity
+    guid: e40b9e8a7828f64459699961adcf7d17
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
