@@ -61,6 +61,7 @@ public class Level_Deu_1 : MonoBehaviour
             }
             button_check.gameObject.SetActive(false);
             button_back.gameObject.SetActive(true);
+            PlayerPrefs.SetString("Deu1Completed", "true");
         }
     }
 }

@@ -119,6 +119,7 @@ public class Level_Phy : MonoBehaviour
                 button.interactable = false;
             }
             button_back.gameObject.SetActive(true);
+            PlayerPrefs.SetString("Phy1Completed", "true");
             Debug.Log("end");
             return;
         }

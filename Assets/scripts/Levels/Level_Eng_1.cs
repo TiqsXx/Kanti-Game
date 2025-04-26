@@ -60,6 +60,7 @@ public class Level_Eng_1 : MonoBehaviour
             button_continue.gameObject.SetActive(false); //Deaktiviert den Knopf
             button_check.gameObject.SetActive(false);
             button_back.gameObject.SetActive(true);
+            PlayerPrefs.SetString("Eng1Completed", "true");
             Debug.Log("end");
             return;
         }

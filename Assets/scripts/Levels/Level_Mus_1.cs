@@ -77,6 +77,7 @@ public class Level_Mus_1 : MonoBehaviour
             }
             button_continue.gameObject.SetActive(false); //Deaktiviert den Knopf
             button_back.gameObject.SetActive(true);
+            PlayerPrefs.SetString("Mus1Completed", "true");
             Debug.Log("end");
             return;
         }

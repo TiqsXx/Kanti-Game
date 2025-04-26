@@ -118,6 +118,7 @@ public class Level_Math : MonoBehaviour
                 button.interactable = false;
             }
             button_back.gameObject.SetActive(true);
+            PlayerPrefs.SetString("Math1Completed", "true");
             Debug.Log("end");
             return;
         }
