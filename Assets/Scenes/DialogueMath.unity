@@ -417,50 +417,31 @@ MonoBehaviour:
   - {fileID: 780602875}
   - {fileID: 1340920344}
   textSpeed: 0.05
-  sceneIndexToLoad: 1
+  sceneIndexToLoad: 5
   lines:
-  - text: Willkommen an der Kantonsschule Solothurn!
+  - text: "Sch\xF6n dich hier zu treffen. Viele andere Spieler f\xFCrchten sich vor
+      dem Mahtematik-Trakt"
     hasChoices: 0
     choices: []
     nextIndexes: 
-  - text: "Wie f\xFChlst du dich an deinem ersten Schultag?"
-    hasChoices: 1
-    choices:
-    - Gut
-    - Schlecht
-    nextIndexes: 0300000002000000
-  - text: "Das wird sich sicher noch im Laufe der Zeit \xE4ndern."
-    hasChoices: 1
-    choices:
-    - Bestimmt...
-    nextIndexes: 04000000
-  - text: "Das werden wir ja noch sehen... Ach ich mach doch nur Spass. Sch\xF6n,
-      dass es dir gut geht!"
-    hasChoices: 0
-    choices: []
-    nextIndexes: 04000000
-  - text: "Soll ich dir die Steuerung erkl\xE4ren?"
-    hasChoices: 1
-    choices:
-    - Gerne
-    - Ne, passt schon
-    nextIndexes: 0500000008000000
-  - text: "Spielanleitung: Zur Fortbewegung benutzt du die Tasten W, A, S und D \u2013
-      oder, wenn du magst, einfach die Pfeiltasten. "
-    hasChoices: 0
-    choices: []
-    nextIndexes: 06000000
-  - text: "Um Felder, Kn\xF6pfe oder andere Elemente auszuw\xE4hlen, klickst du einfach
-      mit der linken Maustaste. "
+  - text: "Aber wie es so sch\xF6n heisst: Nur die Harten kommen in den Garten."
     hasChoices: 0
     choices: []
     nextIndexes: 
-  - text: "Mehr Steuerung brauchst du nicht \u2013 viel Spass beim Spielen!"
+  - text: "Und die H\xE4rteren kommen... Ups, das kann ich hier nicht sagen."
     hasChoices: 0
     choices: []
     nextIndexes: 
-  - text: "Also, in diesem Fall w\xFCnsche ich dir viel Spass an deiner Schule und
-      gutes Gelingen!"
+  - text: Vergiss was ich sagen wollte!
+    hasChoices: 0
+    choices: []
+    nextIndexes: 
+  - text: "Falls du mal nicht weiter weisst, empfehle ich dir die Songs von @Dorfuchs
+      anzuh\xF6ren."
+    hasChoices: 0
+    choices: []
+    nextIndexes: 
+  - text: "Wie auch immer, ich w\xFCnsch dir viel Erfolg!"
     hasChoices: 0
     choices: []
     nextIndexes: 
@@ -868,8 +849,6 @@ GameObject:
   - component: {fileID: 1186032355}
   - component: {fileID: 1186032354}
   - component: {fileID: 1186032353}
-  - component: {fileID: 1186032358}
-  - component: {fileID: 1186032357}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -952,6 +931,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1955688652}
   - {fileID: 332760202}
   - {fileID: 1946288996}
   - {fileID: 519251718}
@@ -963,41 +943,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1186032357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186032352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 45aee7e79da481d49870ba741e62b654, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1186032358
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186032352}
-  m_CullTransparentMesh: 1
 --- !u!1 &1199140666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1434,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946288995}
+  m_CullTransparentMesh: 1
+--- !u!1 &1955688651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955688652}
+  - component: {fileID: 1955688654}
+  - component: {fileID: 1955688653}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1955688652
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955688651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1186032356}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00041579, y: 0.00058896}
+  m_SizeDelta: {x: 1920, y: 1088.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1955688653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955688651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ce3c8ea9e05027a48a7f1fbe7a8269d0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1955688654
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955688651}
   m_CullTransparentMesh: 1
 --- !u!1001 &1509128671193286216
 PrefabInstance:
