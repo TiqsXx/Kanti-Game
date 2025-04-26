@@ -4,11 +4,22 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
-public void PlayGame()
+    public void Start()
+    {
+        PlayerPrefs.SetInt("FirstTime", 1);
+    }
+    public void PlayGame()
 {
-    SceneManager.LoadSceneAsync(13); //Changed to dialogue
-}
+        int fto = PlayerPrefs.GetInt("FirstTime");
+        if (fto == 1) { 
+            SceneManager.LoadSceneAsync(15); //Changed to dialogue
+            PlayerPrefs.SetInt("FirstTime", 0);
+        }
+        else
+        {
+            SceneManager.LoadSceneAsync(1);
+        }
+    }
 
 public void showFullOptions()
     {
