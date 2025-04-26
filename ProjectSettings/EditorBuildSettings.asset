@@ -71,6 +71,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zeugnis.unity
     guid: 1f555649f8dda364a996fcf7b72e6972
+  - enabled: 1
+    path: Assets/Scenes/PhysikDialogue.unity
+    guid: d6019d6bed1424a4e8918c6be6636c0e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0

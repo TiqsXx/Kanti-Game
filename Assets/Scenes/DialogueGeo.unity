@@ -416,20 +416,19 @@ MonoBehaviour:
   - {fileID: 1728314261}
   - {fileID: 780602875}
   - {fileID: 1340920344}
-  textSpeed: 0.1
-  sceneIndexToLoad: -1
+  textSpeed: 0.05
+  sceneIndexToLoad: 17
   lines:
-  - text: Hi
+  - text: Ich habe nur darauf gewartet, dass du dieses Zimmer betrittst.
     hasChoices: 0
     choices: []
     nextIndexes: 
-  - text: Wie gehts
-    hasChoices: 1
-    choices:
-    - Gut
-    - Schlecht
-    nextIndexes: 0200000001000000
-  - text: Super, mir auch!
+  - text: "Da du ganz neu an der Kanti bist, haben wir etwas ganz Besonderes f\xFCr
+      dich vorbereitet."
+    hasChoices: 0
+    choices: []
+    nextIndexes: 
+  - text: Freu dich drauf!
     hasChoices: 0
     choices: []
     nextIndexes: 
@@ -1378,14 +1377,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 38051dd8fa945154daed3d256a5c34a4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

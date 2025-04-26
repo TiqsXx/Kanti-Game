@@ -416,20 +416,34 @@ MonoBehaviour:
   - {fileID: 1728314261}
   - {fileID: 780602875}
   - {fileID: 1340920344}
-  textSpeed: 0.1
-  sceneIndexToLoad: -1
+  textSpeed: 0.05
+  sceneIndexToLoad: 9
   lines:
-  - text: Hi
+  - text: Hier kannst du deinen Geist ganz entspannt zur Ruhe kommen lassen.
     hasChoices: 0
     choices: []
     nextIndexes: 
-  - text: Wie gehts
+  - text: "F\xFCr die einen liegt das Zeichnen, f\xFCr die anderen eher nicht."
+    hasChoices: 0
+    choices: []
+    nextIndexes: 
+  - text: Wie ist es bei dir? Magst du Zeichnen?
     hasChoices: 1
     choices:
-    - Gut
-    - Schlecht
-    nextIndexes: 0200000001000000
-  - text: Super, mir auch!
+    - Klar
+    - Ne man
+    nextIndexes: 0400000003000000
+  - text: "Ganz ehrlich, Zeichnen ist doch eigentlich ein unn\xF6tiges Fach, oder?"
+    hasChoices: 1
+    choices:
+    - Stimmt
+    nextIndexes: 05000000
+  - text: Dann freue ich mich schon auf deine Kunstwerke!
+    hasChoices: 1
+    choices:
+    - "Ich geb mir M\xFChe!"
+    nextIndexes: 05000000
+  - text: "Egal, lass deiner Kreativit\xE4t freien Lauf!"
     hasChoices: 0
     choices: []
     nextIndexes: 
@@ -919,7 +933,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1456645101}
+  - {fileID: 1388289914}
   - {fileID: 332760202}
   - {fileID: 1946288996}
   - {fileID: 519251718}
@@ -1328,7 +1342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1456645100
+--- !u!1 &1388289913
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1336,9 +1350,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1456645101}
-  - component: {fileID: 1456645103}
-  - component: {fileID: 1456645102}
+  - component: {fileID: 1388289914}
+  - component: {fileID: 1388289916}
+  - component: {fileID: 1388289915}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -1346,13 +1360,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1456645101
+--- !u!224 &1388289914
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456645100}
+  m_GameObject: {fileID: 1388289913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1362,30 +1376,30 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0010376, y: -0.0022888}
+  m_AnchoredPosition: {x: -0.00060448, y: 0.00021362}
   m_SizeDelta: {x: 1920, y: 1088.3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1456645102
+--- !u!114 &1388289915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456645100}
+  m_GameObject: {fileID: 1388289913}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 7627a938363e7504cb5e7cd55d3ea696, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1395,13 +1409,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1456645103
+--- !u!222 &1388289916
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456645100}
+  m_GameObject: {fileID: 1388289913}
   m_CullTransparentMesh: 1
 --- !u!224 &1728314259 stripped
 RectTransform:
