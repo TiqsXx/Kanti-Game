@@ -12,3 +12,13 @@
  · Mus1Completed
  · Eng1Completed
  · Deu1Completed
+ · Inf1Completed
+
+ ***** Punktzahl *****
+ · ScorePhy1
+ · ScoreMath1
+ · ScoreMus1
+ · ScoreEng1
+ · ScoreDeu1
+ · ScoreInf1
+

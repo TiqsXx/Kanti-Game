@@ -120,6 +120,7 @@ public class Level_Phy : MonoBehaviour
             }
             button_back.gameObject.SetActive(true);
             PlayerPrefs.SetString("Phy1Completed", "true");
+            PlayerPrefs.SetInt("ScorePhy1", score);
             Debug.Log("end");
             return;
         }

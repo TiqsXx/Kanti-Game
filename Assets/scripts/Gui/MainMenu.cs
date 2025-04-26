@@ -1,11 +1,14 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    public Image background;
     public void Start()
     {
+        //animateBackground();
         if (PlayerPrefs.GetString("FirstTime") is null || PlayerPrefs.GetString("FirstTime") == "true")
         {
             PlayerPrefs.SetString("FirstTime", "true");
@@ -45,11 +48,56 @@ public class MainMenu : MonoBehaviour
 
     public void ShowDialogue()
     {
-        string[] allkeys = { "Phy1Completed", "Math1Completed", "Mus1Completed", "Eng1Completed", "Deu1Completed"};
+        string[] allkeys = { "Phy1Completed", "Math1Completed", "Mus1Completed", "Eng1Completed", "Deu1Completed", "Inf1Completed" };
         foreach (string key in allkeys)
         {
             PlayerPrefs.SetString(key, "false");
         }
         PlayerPrefs.SetString("FirstTime", "true");
+    }
+
+    void animateBackground()
+    {
+        int r, g, b;
+        int counter = 0;
+        bool addred, addblue, addgreen;
+        addred = true;
+        addblue = true;
+        addgreen = true;
+        r = Random.Range(0, 255);
+        g = Random.Range(0, 255);
+        b = Random.Range(0, 255);
+        Debug.Log(r + " " + g + " " + b);
+        while (counter < 1000)
+        {
+            if (r < 255 && addred == true)
+            {
+                r += 1;
+            }
+            else
+            {
+                addred = false;
+                r -= 1;
+            }
+            if (g < 255)
+            {
+                g += 1;
+            }
+            else
+            {
+                g -= 1;
+            }
+            if (b < 255)
+            {
+                b += 1;
+            }
+            else
+            {
+                b -= 1;
+            }
+            background.color = new Color(r, g, b);
+            Debug.Log(r + " " + g + " " + b);
+            counter += 1;
+        }
     }
 }

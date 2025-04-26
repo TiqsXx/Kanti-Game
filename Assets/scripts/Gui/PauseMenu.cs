@@ -7,9 +7,11 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
+    public AudioSource outside_side;
 
         void Start()
     {
+        outside_side.volume = 0f;
         pauseMenuUI.SetActive(false); // Stellt sicher, dass das Pause-Menü zu Beginn deaktiviert ist
         optionsMenuUI.SetActive(false); // Stellt sicher, dass das Options-Menü zu Beginn deaktiviert ist
         GameIsPaused = false;
@@ -18,6 +20,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+        fadeIn();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
@@ -63,6 +66,23 @@ public class PauseMenu : MonoBehaviour
     {
         {
             SceneManager.LoadScene(2);
+        }
+    }
+
+    void fadeIn()
+    {
+        if (outside_side.volume >= 1f)
+        {
+            return;
+        }
+        else
+        {
+            float newVolume = outside_side.volume + (0.5f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
+            if (newVolume > 1f)
+            {
+                newVolume = 1f;
+            }
+            outside_side.volume = newVolume;
         }
     }
 }

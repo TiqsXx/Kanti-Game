@@ -119,6 +119,7 @@ public class Level_Math : MonoBehaviour
             }
             button_back.gameObject.SetActive(true);
             PlayerPrefs.SetString("Math1Completed", "true");
+            PlayerPrefs.SetInt("ScoreMath1", score);
             Debug.Log("end");
             return;
         }

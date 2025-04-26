@@ -61,6 +61,7 @@ public class Level_Eng_1 : MonoBehaviour
             button_check.gameObject.SetActive(false);
             button_back.gameObject.SetActive(true);
             PlayerPrefs.SetString("Eng1Completed", "true");
+            PlayerPrefs.SetInt("ScoreEng1", score);
             Debug.Log("end");
             return;
         }

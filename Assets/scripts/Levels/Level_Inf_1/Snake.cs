@@ -128,6 +128,7 @@ public class Snake : MonoBehaviour
             text_score.text = "Score: " + score;
             if (score == 10)
             {
+                PlayerPrefs.SetString("Inf1Completed", "true");
                 text_score.color = Color.green;
                 Thread.Sleep(1000);
                 SceneManager.LoadScene(1, LoadSceneMode.Single);

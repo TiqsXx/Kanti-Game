@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 using System.Threading;
 using System;
 
@@ -25,9 +26,11 @@ public class Level_Mus_1 : MonoBehaviour
     public TextMeshProUGUI button3_text;
     public Button button_continue;
     public Button button_back;
+    public AudioSource change;
 
     void Start()
     {
+        change.volume = 0f;
         button_continue.gameObject.SetActive(false); //Deaktiviert den Knopf
         button_back.gameObject.SetActive(false);
         question_text.text = question[currentquestion];
@@ -43,7 +46,7 @@ public class Level_Mus_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        fadeIn();
     }
     public void ButtonClicked(int clickedButton)
     {
@@ -78,6 +81,7 @@ public class Level_Mus_1 : MonoBehaviour
             button_continue.gameObject.SetActive(false); //Deaktiviert den Knopf
             button_back.gameObject.SetActive(true);
             PlayerPrefs.SetString("Mus1Completed", "true");
+            PlayerPrefs.SetInt("ScoreMus1", score);
             Debug.Log("end");
             return;
         }
@@ -96,5 +100,21 @@ public class Level_Mus_1 : MonoBehaviour
         button2_text.text = answer[currentquestion * 4 + 2];
         button3_text.text = answer[currentquestion * 4 + 3];
         button_continue.gameObject.SetActive(false); //Deaktiviert den Knopf
+    }
+    void fadeIn()
+    {
+        if (change.volume >= 1f)
+        {
+            return;
+        }
+        else
+        {
+            float newVolume = change.volume + (0.1f * Time.deltaTime);  //change 0.01f to something else to adjust the rate of the volume dropping
+            if (newVolume > 1f)
+            {
+                newVolume = 1f;
+            }
+            change.volume = newVolume;
+        }
     }
 }

@@ -947,8 +947,11 @@ MonoBehaviour:
   - tree
   - house
   - cat
-  - clock
-  - cycle
+  - analog clock
+  - bicycle
+  - window
+  - book
+  - piano
 --- !u!114 &592165084
 MonoBehaviour:
   m_ObjectHideFlags: 0

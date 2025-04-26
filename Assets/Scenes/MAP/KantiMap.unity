@@ -414,6 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 934074614}
   optionsMenuUI: {fileID: 1327281421}
+  outside_side: {fileID: 1279424161}
 --- !u!114 &66810740
 MonoBehaviour:
   m_ObjectHideFlags: 0

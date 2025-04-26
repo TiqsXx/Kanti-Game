@@ -335,6 +335,7 @@ MonoBehaviour:
   button3_text: {fileID: 2120255169}
   button_continue: {fileID: 508209642}
   button_back: {fileID: 1646191609}
+  change: {fileID: 1834308368}
 --- !u!1 &134684405
 GameObject:
   m_ObjectHideFlags: 0
