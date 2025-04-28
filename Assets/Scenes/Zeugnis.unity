@@ -2546,8 +2546,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222.5, y: -6.5}
-  m_SizeDelta: {x: 306.1594, y: 52.2377}
+  m_AnchoredPosition: {x: 342.5, y: -6.5}
+  m_SizeDelta: {x: 546.16, y: 52.2377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1467495191
 MonoBehaviour:
@@ -2569,7 +2569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sport
+  m_text: 'Sport: besucht'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e1eac52fc40a8348abe607ea72339dd, type: 2}
   m_sharedMaterial: {fileID: -1522770102208471374, guid: 7e1eac52fc40a8348abe607ea72339dd, type: 2}
