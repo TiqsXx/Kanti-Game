@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Zeugnis : MonoBehaviour
 {
-    string[] scores = { "ScoreMus1", "ScoreEng1", "ScoreDeu1", "ScoreGeo1" };
+    string[] scores = { "ScoreMus1", "ScoreEng1", "ScoreDeu1", "ScoreGeo1", "ScoreFra1" };
     public TextMeshProUGUI[] specialfacher;
     public TextMeshProUGUI[] facher; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

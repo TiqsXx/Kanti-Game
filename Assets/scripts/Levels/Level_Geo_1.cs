@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Threading;
 using System;
 using UnityEngine.InputSystem;
+using Unity.VisualScripting;
 
 public class Level_Geo_1 : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class Level_Geo_1 : MonoBehaviour
     public Button button_continue;
     public Button button_back;
     int clickedtimes = 1;
+    //Berechnet die Skalierung zwischen Editorfenster und Bildschirm, damit das Mausklicken die richtige Position erzeugt, dieses Problem entsteht aufgrund von verschiedenen Bildschirmauflösungen
+    float scalefactorX = Screen.width / 1920f;
+    float scalefactorY = Screen.height / 1080f;
 
     void Start()
     {
@@ -41,7 +45,8 @@ public class Level_Geo_1 : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) //Wurde die Maus auch gedrückt?
         {
-            if (Input.mousePosition.x > 1187 && Input.mousePosition.y > 315 && Input.mousePosition.x < 1726.5 && Input.mousePosition.y < 741) //Wurde die Maus auch innerhalb der Karte geklickt
+            Debug.Log(Input.mousePosition.x + " | " + Input.mousePosition.y);
+            if (Input.mousePosition.x > (1187 * scalefactorX) && Input.mousePosition.y > (315 * scalefactorY) && Input.mousePosition.x < (1726.5 * scalefactorX) && Input.mousePosition.y < (741 * scalefactorY)) //Wurde die Maus auch innerhalb der Karte geklickt
             { //Wenn ja, dann setze den Kreis auf diese Position
 
                 //Aus dem Forum https://discussions.unity.com/t/get-coordinates-of-mouse-click-on-plane/192333
@@ -57,7 +62,7 @@ public class Level_Geo_1 : MonoBehaviour
         if (clickedtimes % 2 != 0) //Habe ich eine ungerade Anzahl auf dem Knopf gedrückt, so wird es nur gecheckt
         {
             Vector3 circlePosition = locationmarker.rectTransform.position;
-            if (Math.Abs(circlePosition.x - correctLocation[currentquestion].x) < 50 && Math.Abs(circlePosition.y - correctLocation[currentquestion].y) < 50)
+            if (Math.Abs(circlePosition.x - correctLocation[currentquestion].x * scalefactorX) < (50 * scalefactorX) && Math.Abs(circlePosition.y - correctLocation[currentquestion].y * scalefactorY) < (50 * scalefactorY))
             {
                 score += 1;
                 score_text.text = "Score: " + score;
@@ -65,7 +70,7 @@ public class Level_Geo_1 : MonoBehaviour
             else
             {
                 locationmarker_green.gameObject.SetActive(true);
-                locationmarker_green.rectTransform.position = correctLocation[currentquestion];
+                locationmarker_green.rectTransform.position = new Vector3(correctLocation[currentquestion].x * scalefactorX, correctLocation[currentquestion].y * scalefactorY, correctLocation[currentquestion].z);
             }
             clickedtimes += 1;
         }
