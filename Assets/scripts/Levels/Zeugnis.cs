@@ -23,7 +23,14 @@ public class Zeugnis : MonoBehaviour
         for (int n = 0; n < scores.Length; n++)
         {
             decimal note = (PlayerPrefs.GetInt(scores[n])) / 2;
-            facher[n].text = facher[n].text + ": " + note;
+            if (note != 0)
+            {
+                facher[n].text = facher[n].text + ": " + note;
+            }
+            else if (note == 0)
+            {
+                facher[n].text = facher[n].text + ": 1";
+            }
         }
         specialfacher[0].text = specialfacher[0].text + ": " + ((PlayerPrefs.GetInt("ScoreMath1")) + 2);
         specialfacher[1].text = specialfacher[1].text + ": " + ((PlayerPrefs.GetInt("ScoreMath1")) + 2);
