@@ -417,30 +417,38 @@ MonoBehaviour:
   - {fileID: 780602875}
   - {fileID: 1340920344}
   textSpeed: 0.05
-  sceneIndexToLoad: 19
+  sceneIndexToLoad: 14
   lines:
-  - text: "Bonjour \xE0 tous!"
+  - text: Herzlich willkommen zum besten Informatikunterricht, den ihr erlebt haben
+      werdet!
     hasChoices: 0
     choices: []
     nextIndexes: 
-  - text: "Da h\xF6ren meine Franz\xF6sischkenntnisse auch wieder auf."
+  - text: Heute haben wir ein ganz spezielles Programm.
     hasChoices: 0
-    choices: []
+    choices:
+    - 
     nextIndexes: 
-  - text: "Muss zugeben, da ist nicht mehr viel h\xE4ngen geblieben von 8 Jahren
-      Franz\xF6sisch."
+  - text: "Ich m\xF6chte euch aber gar nicht zu viel verraten."
     hasChoices: 0
-    choices: []
+    choices:
+    - 
     nextIndexes: 
-  - text: "Muss zugeben, da ist nicht mehr viel h\xE4ngen geblieben von 8 Jahren
-      Franz\xF6sisch."
+  - text: "Da ihr f\xFCr diesen Auftrag nicht im Zimmer bleiben m\xFCsst..."
     hasChoices: 0
-    choices: []
+    choices:
+    - 
     nextIndexes: 
-  - text: Egal, ich bin ja nicht derjenige, der da durch muss. ;)
+  - text: Gibt es den Schlusscartoon schon jetzt? :)
     hasChoices: 0
-    choices: []
+    choices:
+    - 
     nextIndexes: 
+  - text: ...
+    hasChoices: 1
+    choices:
+    - .
+    nextIndexes: 00000000
 --- !u!1 &519251717
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,8 +483,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -651.1975, y: -236.6998}
-  m_SizeDelta: {x: 278.4842, y: 332.0204}
+  m_AnchoredPosition: {x: -651.2, y: -242}
+  m_SizeDelta: {x: 269.1534, y: 321.1344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519251719
 MonoBehaviour:
@@ -498,7 +506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 836b2c3a9474daf43a238d849e69252f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 876c3a77ee90d21469e7ff23bff40399, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -973,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -690, y: -19.526}
+  m_AnchoredPosition: {x: -651.2, y: -19.526}
   m_SizeDelta: {x: 293.7626, y: 102.3274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1199140668
@@ -996,7 +1004,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Stefan Brummzumm
+  m_text: Dr. Ralf Kretzschmar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 49a5f64cc1db27f42ac1c83002cae8a0, type: 2}
   m_sharedMaterial: {fileID: -3553933716005421742, guid: 49a5f64cc1db27f42ac1c83002cae8a0, type: 2}
@@ -1386,14 +1394,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  m_Color: {r: 0, g: 0.3018868, b: 0.07252013, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 816ac341dc8fa614fbe6eeecf4fbce4e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc101d6042c080d4d847140bcb6690f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1540,11 +1548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1308544754333188494, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 264.3008
+      value: 433.9947
       objectReference: {fileID: 0}
     - target: {fileID: 1308544754333188494, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 62.4871
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 1308544754333188494, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1576,11 +1584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1308544754333188494, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -247
+      value: 643.01
       objectReference: {fileID: 0}
     - target: {fileID: 1308544754333188494, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -172
+      value: -0.0000000025029
       objectReference: {fileID: 0}
     - target: {fileID: 1308544754333188494, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1594,6 +1602,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6751505427809957667, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751505427809957667, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b40659a12b3122442aaadb9dd61fb4bf, type: 3}
     - target: {fileID: 7193758404199169778, guid: 5880eda8cea60fd44be7d23752b190e1, type: 3}
       propertyPath: m_Name
       value: Answer1

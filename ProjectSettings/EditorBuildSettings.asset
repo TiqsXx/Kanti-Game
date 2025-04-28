@@ -92,6 +92,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DIalogue/DialougeMusik.unity
     guid: 9f25304a67901f44bb83397b1bffca55
+  - enabled: 1
+    path: Assets/Scenes/DIalogue/DIalogueINF.unity
+    guid: 88ed19a4f88746b48836ce1663003066
+  - enabled: 1
+    path: Assets/Scenes/DIalogue/DialogueFranz.unity
+    guid: c0ba5b01df145074b8b9dd14450aab60
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
