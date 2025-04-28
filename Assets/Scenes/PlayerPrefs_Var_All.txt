@@ -13,6 +13,7 @@
  · Eng1Completed
  · Deu1Completed
  · Inf1Completed
+ · Geo1Completed
 
  ***** Punktzahl *****
  · ScorePhy1
@@ -21,4 +22,7 @@
  · ScoreEng1
  · ScoreDeu1
  · ScoreInf1
+ · ScoreGeo1
 
+ ***** Zeugnis anzeigen *****
+ · ShowZeugnis

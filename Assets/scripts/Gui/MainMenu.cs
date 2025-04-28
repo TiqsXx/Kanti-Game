@@ -14,6 +14,10 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetString("FirstTime", "true");
             Debug.Log(PlayerPrefs.GetInt("FirstTime"));
         }
+        if (PlayerPrefs.GetString("ShowZeugnis") is null || PlayerPrefs.GetString("ShowZeugnis") == "true")
+        {
+            PlayerPrefs.SetString("ShowZeugnis", "true");
+        }
     }
     public void PlayGame()
     {
@@ -48,7 +52,7 @@ public class MainMenu : MonoBehaviour
 
     public void ShowDialogue()
     {
-        string[] allkeys = { "Phy1Completed", "Math1Completed", "Mus1Completed", "Eng1Completed", "Deu1Completed", "Inf1Completed" };
+        string[] allkeys = { "Phy1Completed", "Math1Completed", "Mus1Completed", "Eng1Completed", "Deu1Completed", "Inf1Completed", "Geo1Completed" };
         foreach (string key in allkeys)
         {
             PlayerPrefs.SetString(key, "false");
