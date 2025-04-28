@@ -1224,6 +1224,36 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 1
     m_ClassDefinitionType: 0
+  - m_Index: 26
+    m_Metrics:
+      m_Width: 40
+      m_Height: 59
+      m_HorizontalBearingX: 4
+      m_HorizontalBearingY: 59
+      m_HorizontalAdvance: 48
+    m_GlyphRect:
+      m_X: 95
+      m_Y: 88
+      m_Width: 40
+      m_Height: 59
+    m_Scale: 1
+    m_AtlasIndex: 1
+    m_ClassDefinitionType: 0
+  - m_Index: 47
+    m_Metrics:
+      m_Width: 39
+      m_Height: 59
+      m_HorizontalBearingX: 7
+      m_HorizontalBearingY: 59
+      m_HorizontalAdvance: 48
+    m_GlyphRect:
+      m_X: 136
+      m_Y: 10
+      m_Width: 39
+      m_Height: 59
+    m_Scale: 1
+    m_AtlasIndex: 1
+    m_ClassDefinitionType: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 8230
@@ -1383,6 +1413,7 @@ MonoBehaviour:
     m_Scale: 1
   - m_ElementType: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Unicode: 71
     m_GlyphIndex: 42
     m_Scale: 1
@@ -1461,10 +1492,13 @@ MonoBehaviour:
   - m_ElementType: 1
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     m_Unicode: 55
     m_GlyphIndex: 26
     m_Scale: 1
   - m_ElementType: 1
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     m_Unicode: 53
     m_GlyphIndex: 24
@@ -1476,6 +1510,10 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 63
     m_GlyphIndex: 34
+=======
+    m_Unicode: 76
+    m_GlyphIndex: 47
+>>>>>>> Stashed changes
 =======
     m_Unicode: 76
     m_GlyphIndex: 47
@@ -1509,6 +1547,7 @@ MonoBehaviour:
     m_Y: 78
     m_Width: 61
     m_Height: 80
+<<<<<<< Updated upstream
   - m_X: 61
     m_Y: 78
     m_Width: 61
@@ -1590,6 +1629,26 @@ MonoBehaviour:
 =======
   - m_X: 85
     m_Y: 78
+=======
+  - m_X: 57
+    m_Y: 79
+    m_Width: 28
+    m_Height: 78
+  - m_X: 61
+    m_Y: 0
+    m_Width: 65
+    m_Height: 78
+  - m_X: 0
+    m_Y: 237
+    m_Width: 78
+    m_Height: 95
+  - m_X: 61
+    m_Y: 157
+    m_Width: 67
+    m_Height: 78
+  - m_X: 85
+    m_Y: 78
+>>>>>>> Stashed changes
     m_Width: 59
     m_Height: 78
   - m_X: 126
@@ -1629,6 +1688,9 @@ MonoBehaviour:
     m_Y: 0
     m_Width: 327
     m_Height: 511
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FontFeatureTable:
     m_MultipleSubstitutionRecords: []
