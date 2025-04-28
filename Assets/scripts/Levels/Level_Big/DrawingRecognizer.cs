@@ -3,6 +3,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
+using System.Text;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -17,7 +18,7 @@ public class HFLabel
 public class DrawingRecognizer : MonoBehaviour
 {
     // TMP_Text für das gesuchte Wort, das du im Inspector zuweisen kannst
-    public TMP_Text gesuchtesWortText; 
+    public TMP_Text gesuchtesWortText;
 
     // TMP_Text für die Antwort von der API (wird im Spiel angezeigt)
     public TMP_Text apiAntwortText;
@@ -28,14 +29,21 @@ public class DrawingRecognizer : MonoBehaviour
     // Initialer Score
     private int score = 0;
 
-    string apiKey = "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";
+    // API-Schlüssel (der hier verwendete Schlüssel ist der, den du angegeben hast)
+    string apiKey = "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";
+
+    // Model URL (hier verwendete URL des Modells von Hugging Face)
     string modelUrl = "https://api-inference.huggingface.co/models/google/vit-base-patch16-224";
+
+    // Dateiname für das Bild, das du verwenden möchtest
     string imageFileName = "drawing.png";
+
+    // Pfad zum Screenshot
     string screenshotPath;
 
     void Start()
     {
-        // Prüfe, ob das TMP_Text-Feld für das gesuchte Wort, API-Antwort und Score korrekt zugewiesen wurden
+        // Prüfe, ob die TMP_Text-Felder für das gesuchte Wort, API-Antwort und Score korrekt zugewiesen wurden
         if (gesuchtesWortText == null || apiAntwortText == null || scoreText == null)
         {
             Debug.LogError("❌ TMP_Text-Felder für gesuchtes Wort, API-Antwort und/oder Score wurden nicht zugewiesen!");
@@ -93,11 +101,19 @@ public class DrawingRecognizer : MonoBehaviour
         Debug.Log("📤 Lade Bild: " + screenshotPath);
         byte[] imageBytes = File.ReadAllBytes(screenshotPath);
 
-        // Sende das Bild an Hugging Face API
-        UnityWebRequest request = UnityWebRequest.Put(modelUrl, imageBytes);
-        request.method = UnityWebRequest.kHttpVerbPOST;
+        // Konvertiere das Bild in Base64
+        string base64Image = System.Convert.ToBase64String(imageBytes);
+
+        // Erstelle JSON-Daten mit dem Bild im Base64-Format
+        string jsonBody = $"{{\"inputs\": \"data:image/png;base64,{base64Image}\"}}";
+
+        // Erstelle eine POST-Anfrage
+        UnityWebRequest request = new UnityWebRequest(modelUrl, "POST");
+        byte[] jsonToSend = Encoding.UTF8.GetBytes(jsonBody);
+        request.uploadHandler = new UploadHandlerRaw(jsonToSend);
+        request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Authorization", "Bearer " + apiKey);
-        request.SetRequestHeader("Content-Type", "application/octet-stream");
+        request.SetRequestHeader("Content-Type", "application/json");
 
         Debug.Log("🔁 Sende Bild an Hugging Face...");
         yield return request.SendWebRequest();
@@ -105,6 +121,7 @@ public class DrawingRecognizer : MonoBehaviour
         if (request.result != UnityWebRequest.Result.Success)
         {
             Debug.LogError("❌ Fehler: " + request.error);
+            Debug.LogError("Antwort: " + request.downloadHandler.text); // Zeige die Fehlermeldung der API
             yield break;
         }
 
@@ -118,7 +135,7 @@ public class DrawingRecognizer : MonoBehaviour
             apiAntwortText.text = "API Antwort: " + responseText; // Hier kannst du die Antwort formatieren, wie du möchtest
         }
 
-        // Label extrahieren
+        // Labels extrahieren
         HFLabel[] labels = JsonHelper.FromJsonArray<HFLabel>(responseText);
         if (labels.Length > 0)
         {
