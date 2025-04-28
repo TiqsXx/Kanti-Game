@@ -74,6 +74,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PhysikDialogue.unity
     guid: d6019d6bed1424a4e8918c6be6636c0e
+  - enabled: 1
+    path: Assets/Scenes/BgDialogue.unity
+    guid: de4181dc749b147419c867482c942457
+  - enabled: 1
+    path: Assets/Scenes/DeutschDialogue.unity
+    guid: 239c4185128ee454585f89c5f6e121fd
+  - enabled: 1
+    path: Assets/Scenes/DIalogueENG.unity
+    guid: 8a7692f680c7ebf45ade141891342e70
+  - enabled: 1
+    path: Assets/Scenes/DialogueEnglish.unity
+    guid: f470c3abbc2860949b16a9299b3e95e4
+  - enabled: 1
+    path: Assets/Scenes/DialogueGeo.unity
+    guid: a21e074fbbc1f5f48a2aa0872d279e6e
+  - enabled: 1
+    path: Assets/Scenes/DialougeMusik.unity
+    guid: 9f25304a67901f44bb83397b1bffca55
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
