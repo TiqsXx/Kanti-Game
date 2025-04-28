@@ -63,7 +63,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ROOMS/Bio/M03_Bio_1.unity
     guid: d6790e77a4d6d174d91adaa147193e9d
   - enabled: 1
-    path: Assets/Scenes/ROOMS/Franz/E05_Fra_1.unity
+    path: Assets/Scenes/ROOMS/E05/E05_Fra_1.unity
     guid: 49b7665640bc3b441946411ffaeebdfd
   - enabled: 1
     path: Assets/Scenes/ROOMS/Spo/H01_Spo_1.unity
