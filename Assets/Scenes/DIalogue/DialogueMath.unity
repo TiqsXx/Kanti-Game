@@ -417,7 +417,7 @@ MonoBehaviour:
   - {fileID: 780602875}
   - {fileID: 1340920344}
   textSpeed: 0.05
-  sceneIndexToLoad: 11
+  sceneIndexToLoad: 7
   lines:
   - text: "Sch\xF6n dich hier zu treffen. Viele andere Spieler f\xFCrchten sich vor
       dem Mahtematik-Trakt"
