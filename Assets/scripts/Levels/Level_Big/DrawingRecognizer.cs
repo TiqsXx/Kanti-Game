@@ -1,3 +1,4 @@
+//Grundlegende API Anfrage wurde selbst erstellt, Kodierung und Übertragung eines Bildes mithilfe von AI
 using System.Collections;
 using System.IO;
 using UnityEngine;

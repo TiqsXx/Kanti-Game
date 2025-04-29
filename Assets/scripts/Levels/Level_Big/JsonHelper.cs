@@ -1,3 +1,4 @@
+//Dieser Teil vom Code wurde nur fürs ausprobieren genutzt, nicht relevant für die Funktionsfähigkeit vom ganzem.
 using System;
 using UnityEngine;
 
