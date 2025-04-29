@@ -420,7 +420,7 @@ MonoBehaviour:
   sceneIndexToLoad: 7
   lines:
   - text: "Sch\xF6n dich hier zu treffen. Viele andere Spieler f\xFCrchten sich vor
-      dem Mahtematik-Trakt"
+      dem Mathematik-Trakt"
     hasChoices: 0
     choices: []
     nextIndexes: 

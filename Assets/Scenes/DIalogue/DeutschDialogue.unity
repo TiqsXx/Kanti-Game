@@ -510,7 +510,7 @@ MonoBehaviour:
     - "C) \u201EWarum suchst du immer nach mehr?\u201C"
     - "D) \u201EWas willst du wirklich im Leben?\u201C"
     nextIndexes: 04000000030000000400000004000000
-  - text: Nicht schlecht, da freut sich jemand auf den Detuschunterricht...
+  - text: Nicht schlecht, da freut sich jemand auf den Deutschunterricht...
     hasChoices: 1
     choices:
     - Nicht wirklich..
