@@ -78,6 +78,7 @@ public class Level_Fra_1 : MonoBehaviour
             Debug.Log("end");
             return;
         }
+        question_text.text = questions[currentquestion];
         answerbox.image.color = Color.white;
         answerbox.text = "";
         answerbox.interactable = true;

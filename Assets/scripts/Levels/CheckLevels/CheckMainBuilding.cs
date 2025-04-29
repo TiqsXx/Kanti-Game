@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class CheckMainBuilding : MonoBehaviour
 {
-    string[] mainkeys = { "Mus1Completed", "Eng1Completed", "Deu1Completed", "Geo1Completed" };
+    string[] mainkeys = { "Mus1Completed", "Eng1Completed", "Deu1Completed", "Geo1Completed", "Fra1Completed" };
     public Button[] levels;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
