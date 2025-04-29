@@ -15,6 +15,7 @@
  · Inf1Completed
  · Geo1Completed
  · Fra1Completed
+ · Ges1Completed
 
  ***** Punktzahl *****
  · ScorePhy1
@@ -25,6 +26,4 @@
  · ScoreInf1
  · ScoreGeo1
  · ScoreFra1
-
- ***** Zeugnis anzeigen *****
- · ShowZeugnis
+ · ScoreGes1

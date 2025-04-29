@@ -226,12 +226,14 @@ MonoBehaviour:
   specialfacher:
   - {fileID: 687299985}
   - {fileID: 1040265667}
+  - {fileID: 1146388784}
   facher:
   - {fileID: 1257861838}
   - {fileID: 907629635}
   - {fileID: 1143850103}
   - {fileID: 18997919}
   - {fileID: 605060138}
+  notendurchschnitt: {fileID: 1823929881}
 --- !u!1 &18997917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,7 +2059,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Geschichte: besucht'
+  m_text: Geschichte
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e1eac52fc40a8348abe607ea72339dd, type: 2}
   m_sharedMaterial: {fileID: -1522770102208471374, guid: 7e1eac52fc40a8348abe607ea72339dd, type: 2}
@@ -2876,7 +2878,7 @@ GameObject:
   - component: {fileID: 1823929882}
   - component: {fileID: 1823929881}
   m_Layer: 5
-  m_Name: Noten (TMP)
+  m_Name: Notendurchschnitt (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2898,8 +2900,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396, y: -288}
-  m_SizeDelta: {x: 567.2158, y: 64.309}
+  m_AnchoredPosition: {x: -373.5, y: -288}
+  m_SizeDelta: {x: 612.2158, y: 64.309}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1823929881
 MonoBehaviour:
