@@ -101,6 +101,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ROOMS/K08/K08_Ges.unity
     guid: 379d72e614b3d0e4e88eb0a475886725
+  - enabled: 1
+    path: Assets/Scenes/DIalogue/DialogueGes.unity
+    guid: 82adabd0fdf58084eab56fe773f945ec
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0

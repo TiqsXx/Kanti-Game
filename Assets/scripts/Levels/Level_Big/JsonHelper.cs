@@ -5,14 +5,14 @@ public static class JsonHelper
 {
     public static T[] FromJsonArray<T>(string json)
     {
-        string newJson = "{\"array\":" + json + "}";
-        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(newJson);
-        return wrapper.array;
+        string wrappedJson = "{\"Items\":" + json + "}";
+        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(wrappedJson);
+        return wrapper.Items;
     }
 
-    [Serializable]
+    [System.Serializable]
     private class Wrapper<T>
     {
-        public T[] array;
+        public T[] Items;
     }
 }
